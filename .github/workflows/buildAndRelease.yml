@@ -29,5 +29,5 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         tag_name: ${{ github.ref }}
-        name: Release ${{ github.ref }}
-        files: ./dist/cb.exe
+        name: cppBuildTool Release ${{ github.ref }}
+        files: ./dist/main.exe
